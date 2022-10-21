@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>電卓</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="container">
+    <p class="display" id="displayNum">0</p>
+    <div class="button-container">
+      <div class="button-row">
+        <button onclick="numberClick(this)">7</button>
+        <button onclick="numberClick(this)">8</button>
+        <button onclick="numberClick(this)">9</button>
+        <button class="symbol-button" onclick="otherClick(this)">+</button>
+      </div>
+      <div class="button-row">
+        <button onclick="numberClick(this)">4</button>
+        <button onclick="numberClick(this)">5</button>
+        <button onclick="numberClick(this)">6</button>
+        <button class="symbol-button" onclick="otherClick(this)">-</button>
+      </div>
+      <div class="button-row">
+        <button onclick="numberClick(this)">1</button>
+        <button onclick="numberClick(this)">2</button>
+        <button onclick="numberClick(this)">3</button>
+        <button class="symbol-button" onclick="otherClick(this)">*</button>
+      </div>
+      <div class="button-row">
+        <button onclick="numberClick(this)">0</button>
+        <button onclick="numberClick(this)">00</button>
+        <button onclick="otherClick(this)">.</button>
+        <button class="symbol-button" onclick="otherClick(this)">/</button>
+      </div>
+      <div class="button-row">
+        <button class="symbol-button" onclick="otherClick(this)">AC</button>
+        <button class="symbol-button" onclick="otherClick(this)">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
